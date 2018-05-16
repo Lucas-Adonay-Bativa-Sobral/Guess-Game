@@ -1,11 +1,16 @@
+from random import randint
+
+secret = randint(1, 10)
 print('Welcome!')
+guess = 0
 g = input('Guess the number: ')
 guess = int(g)
-if guess == 5:
+if guess == secret:
     print('You Win!')
 else:
-    if guess > 5:
+    if guess > secret:
         print('Too High!')
     else:
         print('Too Low!')
-print('Game Over')
+print('Game Over!')
+
